@@ -60,7 +60,7 @@ public class MainActivity extends Activity {
         }
 
         public void update() {
-            re
+            //ooooooooooo
         }
     }
 }
