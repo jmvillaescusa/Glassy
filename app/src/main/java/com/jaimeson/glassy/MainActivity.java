@@ -1,12 +1,10 @@
 package com.jaimeson.glassy;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -15,13 +13,40 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Buttons
+        //Button Setups
         Button buttonPlay = (Button)findViewById(R.id.buttonPlay);
         Button buttonQuit = (Button)findViewById(R.id.buttonQuit);
+        Button buttonHiScores = (Button)findViewById(R.id.buttonHiScore);
+        buttonPlay.setOnClickListener(this);
+        buttonQuit.setOnClickListener(this);
+        buttonHiScores.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-
+        Intent i;
+        switch (v.getId()){
+            case R.id.buttonPlay:
+                //Start game
+                //i = new Intent(this, GameActivity.class)
+                //startActivity(i);
+                break;
+            case R.id.buttonQuit:
+                //Exit Game
+                finish();
+                System.exit(0);
+                //onDestroy();
+                break;
+            case R.id.buttonHiScore:
+                //Display top scores
+                break;
+        }
     }
+
+    @Override public void onStart() { super.onStart(); }
+    @Override public void onResume() { super.onResume(); }
+    @Override public void onPause() { super.onPause(); }
+    @Override public void onStop() { super.onStop(); }
+    @Override public void onDestroy() { super.onDestroy(); }
+
 }
