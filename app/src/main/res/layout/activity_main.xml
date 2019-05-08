@@ -32,28 +32,30 @@
 
     <Button
         android:id="@+id/buttonPlay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="188dp"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="140dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:text="Play"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textHiScore"
-        app:layout_constraintVertical_bias="0.27" />
+        app:layout_constraintVertical_bias="0.278" />
 
     <Button
         android:id="@+id/buttonQuit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="188dp"
+        android:layout_marginEnd="140dp"
         android:layout_marginBottom="8dp"
         android:text="Quit"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textHiScore"
-        app:layout_constraintVertical_bias="0.276" />
+        app:layout_constraintVertical_bias="0.278" />
 
 </android.support.constraint.ConstraintLayout>
