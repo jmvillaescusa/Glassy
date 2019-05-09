@@ -47,5 +47,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override public void onPause() { super.onPause(); }
     @Override public void onStop() { super.onStop(); }
     @Override public void onDestroy() { super.onDestroy(); }
-
 }
