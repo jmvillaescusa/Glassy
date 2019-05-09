@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //Exit Game
                 finish();
                 System.exit(0);
-                //onDestroy();
                 break;
             case R.id.buttonHiScore:
                 //Display top scores
