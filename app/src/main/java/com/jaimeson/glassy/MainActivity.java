@@ -28,12 +28,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.buttonPlay:
                 //Start game
-                //i = new Intent(this, GameActivity.class)
+                //i = new Intent(this, GameActivity.class);
                 //startActivity(i);
                 break;
             case R.id.buttonQuit:
                 //Exit Game
-                finish();
                 System.exit(0);
                 break;
             case R.id.buttonHiScore:
