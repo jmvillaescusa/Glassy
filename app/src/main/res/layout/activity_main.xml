@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="4dp"
-        android:text="TextView"
+        android:text='"Insert Name Here"'
         android:textColor="@android:color/tertiary_text_light"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textCredits" />
@@ -82,7 +82,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="4dp"
-        android:text="TextView"
+        android:text='"Insert Name Here"'
         android:textColor="@android:color/tertiary_text_light"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textName1" />
@@ -93,7 +93,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="4dp"
-        android:text="Jaimeson Mario VIllaescusa"
+        android:text='"Insert Name Here"'
         android:textColor="@android:color/tertiary_text_light"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textName2" />
