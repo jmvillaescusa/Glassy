@@ -19,6 +19,8 @@ import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
+import java.util.Random;
+
 public class GameActivity extends Activity {
 
     //Display Screen
@@ -67,6 +69,10 @@ public class GameActivity extends Activity {
             ourHolder = getHolder();
             paint = new Paint();
 
+        }
+
+        public void shatter(){
+            Random random = new Random();
         }
 
         @Override
