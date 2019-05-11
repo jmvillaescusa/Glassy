@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="284dp"
-        android:text="Credits:"
+        android:text="Created by:"
         android:textColor="@android:color/tertiary_text_light"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
