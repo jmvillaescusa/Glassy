@@ -1,6 +1,8 @@
 package com.jaimeson.glassy;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetFileDescriptor;
@@ -10,18 +12,28 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Picture;
 import android.graphics.Point;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.Window;
 import android.view.Display;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.Random;
 
-public class GameActivity extends Activity {
+public class GameActivity extends Activity implements View.OnClickListener {
 
     //Display Screen
     Canvas canvas;
@@ -41,8 +53,9 @@ public class GameActivity extends Activity {
     int correct = -1;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_game);
 
         //Dimensions of the Screen
         Display display = getWindowManager().getDefaultDisplay();
@@ -51,11 +64,10 @@ public class GameActivity extends Activity {
         screenWidth = size.x;
         screenHeight = size.y;
 
-
-
         pictureView = new PictureView(this);
-        setContentView(pictureView);
-
+        //setContentView(pictureView);
+        Button buttonPause = findViewById(R.id.buttonPause);
+        buttonPause.setOnClickListener(this);
     }
 
     class PictureView extends SurfaceView implements Runnable {
@@ -68,12 +80,11 @@ public class GameActivity extends Activity {
             super(context);
             ourHolder = getHolder();
             paint = new Paint();
-
         }
 
-        public void shatter(){
+        /*public void shatter(){
             Random random = new Random();
-        }
+        }*/
 
         @Override
         public void run() {
@@ -124,6 +135,22 @@ public class GameActivity extends Activity {
         public boolean onTouchEvent(MotionEvent motionEvent){
 
             return true;
+        }
+
+
+    }
+
+    @Override
+    public void onClick(View v){
+        Intent i;
+        switch (v.getId()){
+            case R.id.buttonPause:
+                //It should Pause the playing session
+                //Instead, it returns to Main Menu Screen
+                i = new Intent(this, MainActivity.class);
+                startActivity(i);
+
+                break;
         }
     }
 
