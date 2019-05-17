@@ -14,9 +14,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         //Button Setups
-        Button buttonPlay = (Button)findViewById(R.id.buttonPlay);
-        Button buttonQuit = (Button)findViewById(R.id.buttonQuit);
-        Button buttonHiScores = (Button)findViewById(R.id.buttonHiScore);
+        Button buttonPlay = findViewById(R.id.buttonPlay);
+        Button buttonQuit = findViewById(R.id.buttonQuit);
+        Button buttonHiScores = findViewById(R.id.buttonHiScore);
         buttonPlay.setOnClickListener(this);
         buttonQuit.setOnClickListener(this);
         buttonHiScores.setOnClickListener(this);
@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.buttonPlay:
                 //Start game
-                //i = new Intent(this, GameActivity.class);
-                //startActivity(i);
+                i = new Intent(this, GameActivity.class);
+                startActivity(i);
                 break;
             case R.id.buttonQuit:
                 //Exit Game
