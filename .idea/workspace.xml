@@ -54,38 +54,37 @@
     <session id="-1342070361">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
-          <entry key="project.open.time.0" value="3" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="12" />
-          <entry key="xml" value="8" />
+          <entry key="java" value="10" />
+          <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="12" />
-          <entry key="XML" value="8" />
+          <entry key="JAVA" value="10" />
+          <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="3269" />
-          <entry key="txt" value="420" />
+          <entry key="txt" value="413" />
           <entry key="xml" value="185" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="3269" />
-          <entry key="PLAIN_TEXT" value="420" />
+          <entry key="PLAIN_TEXT" value="413" />
           <entry key="XML" value="185" />
         </counts>
       </usages-collector>
@@ -102,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jaimeson/glassy/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="255">
               <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -111,20 +110,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
+          <provider editor-type-id="text-editor" />
           <provider selected="true" editor-type-id="android-designer2" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jaimeson/glassy/GameActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="715">
+            <state relative-caret-position="837">
               <caret line="113" column="29" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -138,7 +133,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/app/Activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14671">
+            <state relative-caret-position="252">
               <caret line="1020" column="19" selection-start-line="1020" selection-start-column="19" selection-end-line="1020" selection-end-column="19" />
             </state>
           </provider>
@@ -172,17 +167,17 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/jaimeson/shatteredart/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jaimeson/shatteredart/GameActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jaimeson/glassy/PictureAnimView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jaimeson/glassy/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jaimeson/glassy/GameActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="409" />
-    <option name="y" value="234" />
+    <option name="x" value="135" />
+    <option name="y" value="77" />
     <option name="width" value="959" />
     <option name="height" value="539" />
   </component>
@@ -192,6 +187,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Glassy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Glassy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -208,17 +214,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Glassy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Glassy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -241,7 +237,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,12 +362,11 @@
       <window_info anchor="bottom" id="TODO" order="1" />
       <window_info anchor="bottom" id="Android Profiler" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50319827" side_tool="true" visible="true" weight="0.17237799" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5021322" side_tool="true" visible="true" weight="0.17237799" />
       <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Build" order="6" sideWeight="0.4968017" visible="true" weight="0.17237799" />
+      <window_info active="true" anchor="bottom" id="Build" order="6" sideWeight="0.4978678" visible="true" weight="0.17237799" />
       <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49944383" weight="0.3293919" />
       <window_info anchor="bottom" id="Debug" order="8" />
-      <window_info anchor="right" id="Preview" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
@@ -392,13 +386,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jaimeson/glassy/PictureAnimView.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/app/Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14671">
+        <state relative-caret-position="252">
           <caret line="1020" column="19" selection-start-line="1020" selection-start-column="19" selection-end-line="1020" selection-end-column="19" />
         </state>
       </provider>
@@ -411,21 +401,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jaimeson/glassy/GameActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="113" column="29" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2853#2854#0" expanded="true" />
-            <element signature="e#2905#2906#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jaimeson/glassy/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="255">
           <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -434,12 +412,24 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jaimeson/glassy/GameActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="113" column="29" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2853#2854#0" expanded="true" />
+            <element signature="e#2905#2906#0" expanded="true" />
+          </folding>
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
   </component>
 </project>
