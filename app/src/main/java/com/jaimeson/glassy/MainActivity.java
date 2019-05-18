@@ -1,17 +1,21 @@
 package com.jaimeson.glassy;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         //Button Setups
         Button buttonPlay = findViewById(R.id.buttonPlay);
@@ -20,6 +24,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonPlay.setOnClickListener(this);
         buttonQuit.setOnClickListener(this);
         buttonHiScores.setOnClickListener(this);
+
+
     }
 
     @Override

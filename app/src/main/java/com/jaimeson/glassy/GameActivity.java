@@ -27,6 +27,7 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -34,6 +35,8 @@ import android.widget.TextView;
 import java.util.Random;
 
 public class GameActivity extends Activity implements View.OnClickListener {
+
+    int number;
 
     //Display Screen
     Canvas canvas;
@@ -52,10 +55,18 @@ public class GameActivity extends Activity implements View.OnClickListener {
     int shatter = -1;
     int correct = -1;
 
+    //UI
+    Button buttonPause;
+    TextView textScore;
+
+    //Picture
+    ImageView picture;
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         //Dimensions of the Screen
         Display display = getWindowManager().getDefaultDisplay();
@@ -66,14 +77,19 @@ public class GameActivity extends Activity implements View.OnClickListener {
 
         pictureView = new PictureView(this);
         //setContentView(pictureView);
-        Button buttonPause = findViewById(R.id.buttonPause);
+
+        //Pause Button
+        buttonPause = findViewById(R.id.buttonPause);
         buttonPause.setOnClickListener(this);
+
+        picture = findViewById(R.id.imageFrame);
+        picture.setImageBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.mushroom01));
     }
 
     class PictureView extends SurfaceView implements Runnable {
         Thread ourThread = null;
         SurfaceHolder ourHolder;
-        volatile boolean playing;
+        volatile boolean playing = true;
         Paint paint;
 
         public PictureView (Context context){
@@ -82,9 +98,9 @@ public class GameActivity extends Activity implements View.OnClickListener {
             paint = new Paint();
         }
 
-        /*public void shatter(){
+        public void shatter(){
             Random random = new Random();
-        }*/
+        }
 
         @Override
         public void run() {
@@ -142,13 +158,12 @@ public class GameActivity extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View v){
-        Intent i;
         switch (v.getId()){
             case R.id.buttonPause:
                 //It should Pause the playing session
                 //Instead, it returns to Main Menu Screen
-                i = new Intent(this, MainActivity.class);
-                startActivity(i);
+                finish();
+
 
                 break;
         }
